@@ -1,0 +1,14 @@
+﻿<Window x:Class="UpdateCurrentLocation.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UpdateCurrentLocation"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="800" Width="1000">
+    <Grid Loaded="Grid_Loaded">
+        <DataGrid x:Name="dgrResults" HorizontalAlignment="Left" Height="676" Margin="10,83,0,0" VerticalAlignment="Top" Width="972" AlternationCount="1" RowBackground="AliceBlue" AlternatingRowBackground="LightBlue"/>
+        <Button x:Name="btnProcess" Content="Process" FontSize="22" HorizontalAlignment="Left" Margin="401,10,0,0" VerticalAlignment="Top" Width="166" Height="68" Click="btnProcess_Click"/>
+
+    </Grid>
+</Window>

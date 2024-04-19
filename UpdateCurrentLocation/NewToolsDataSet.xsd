@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NewToolsDataSet" targetNamespace="http://tempuri.org/NewToolsDataSet.xsd" xmlns:mstns="http://tempuri.org/NewToolsDataSet.xsd" xmlns="http://tempuri.org/NewToolsDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="NewToolsDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="NewToolsDataSet" msprop:Generator_UserDSName="NewToolsDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tools" msprop:Generator_TableClassName="toolsDataTable" msprop:Generator_TableVarName="tabletools" msprop:Generator_TablePropName="tools" msprop:Generator_RowDeletingName="toolsRowDeleting" msprop:Generator_RowChangingName="toolsRowChanging" msprop:Generator_RowEvHandlerName="toolsRowChangeEventHandler" msprop:Generator_RowDeletedName="toolsRowDeleted" msprop:Generator_UserTableName="tools" msprop:Generator_RowChangedName="toolsRowChanged" msprop:Generator_RowEvArgName="toolsRowChangeEvent" msprop:Generator_RowClassName="toolsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ToolKey" msprop:Generator_ColumnVarNameInTable="columnToolKey" msprop:Generator_ColumnPropNameInRow="ToolKey" msprop:Generator_ColumnPropNameInTable="ToolKeyColumn" msprop:Generator_UserColumnName="ToolKey" type="xs:int" />
+              <xs:element name="ToolID" msprop:Generator_ColumnVarNameInTable="columnToolID" msprop:Generator_ColumnPropNameInRow="ToolID" msprop:Generator_ColumnPropNameInTable="ToolIDColumn" msprop:Generator_UserColumnName="ToolID" type="xs:string" />
+              <xs:element name="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_UserColumnName="Description" type="xs:string" />
+              <xs:element name="WarehouseID" msprop:Generator_ColumnVarNameInTable="columnWarehouseID" msprop:Generator_ColumnPropNameInRow="WarehouseID" msprop:Generator_ColumnPropNameInTable="WarehouseIDColumn" msprop:Generator_UserColumnName="WarehouseID" type="xs:int" />
+              <xs:element name="AssignedOffice" msprop:Generator_ColumnVarNameInTable="columnAssignedOffice" msprop:Generator_ColumnPropNameInRow="AssignedOffice" msprop:Generator_ColumnPropNameInTable="AssignedOfficeColumn" msprop:Generator_UserColumnName="AssignedOffice" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:tools" />
+      <xs:field xpath="mstns:ToolKey" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
